@@ -5,7 +5,13 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
+/**
+ * 
+ * 
+ * @author Mars Zheng
+ */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
-public @interface Test {
+public @interface ExceptionTest2 {
+    Class<? extends Exception>[] value();
 }
